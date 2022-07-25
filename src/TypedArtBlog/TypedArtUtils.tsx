@@ -44,14 +44,15 @@ export type TypedArtPost = {
 }
 
 export enum TypedArtPostType {
-    Category1 = "category1",
-    Category2 = "category2"
+    Category1 = "aliakfeature",
+    Category2 = "aliakblog"
 }
 
 const whitelist: string[] = [
     // NOTE: you could maybe have an onchain wl instead of a hardcoded one.
-    "tz1...",
-    "tz2..."
+    // "tz1...",
+    // "tz2..."
+    "tz1eky73coNLY3e8b3rzBihpkC799Db3UtKp"
 ]
 
 export async function fetchTypedArtPosts(postType: TypedArtPostType, limit: number = 10, offset: number = 0): Promise<TypedArtPost[]> {
