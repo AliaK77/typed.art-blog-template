@@ -57,7 +57,7 @@ export const TypedArtBlog: React.FC<TypedArtBlogProps> = (props) => {
                 </div>);
         }
 
-        const title = props.tag === TypedArtPostType.Category1 ? "Category1" : "Category2";
+        const title = props.tag === TypedArtPostType.Category1 ? "Features" : "Blog";
 
     const range1 = (n: number) => Array.from(Array(n), (_,i)=> i+1);
     console.log()
